@@ -1,0 +1,107 @@
+body { 
+	font-family: 'Oxygen', sans-serif;
+	line-height: 200%;
+	background-image: url("../images/concrete_seamless.png");  	
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column; 
+}
+
+h1 { font-size: 200%; }
+
+h1, h2, h3, h4 { 
+	font-family: 'Rozha One', serif; 
+	letter-spacing: -1px; 
+}
+
+h4 { 
+	margin-bottom: 0;
+}
+
+header { border-bottom: 3px solid #ccc; }
+
+.main-content { flex: 1 0 auto; }
+
+.nav-item:hover { background-color: #17a2b8; }
+
+/* a:hover { color: #fff; } is not working, I think bootstrap is overwriting but I could not find how. */
+
+.card-body img {
+	opacity: 0.8;
+	transform: scale(0.95);
+	transition: transform 0.5s, opacity 0.5s;
+	max-width: 75px;
+} 
+
+.card-body img:hover {
+	transform: scale(1.1);
+	opacity: 1;
+}
+
+.project { 
+	bottom: 30px; 
+	color: #fff;
+	text-align: center;
+	padding: 2%;
+	width: calc(100% - 30px);
+}
+
+/*=======================================================================
+========================= MEDIA QUERIES =================================
+=========================================================================*/
+
+@media screen and (min-width: 576px) {
+	.about-section { 
+		max-width: 64.6667%; 
+		margin-right: 2%; 
+	}
+
+	.about-aside { 
+		max-width: 31.3333%; 
+		margin-left: 2%; 
+	}
+
+	.name-logo { max-width: 300px; }
+
+	.main-links { min-width: calc(100% - 300px); }
+
+	ul { 
+		margin-top: 15px; 
+		margin-right: -5px;
+		float: right;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#profile-img {
+		width: 60%;
+	}
+
+	h1 { font-size: 250%; }
+
+	.section { 
+		max-width: 64.6667%; 
+		margin-right: 2%; 
+	}
+
+	.aside { 
+		max-width: 31.3333%; 
+		margin-left: 2%; 
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container-fluid {
+		width: 960px;
+	}
+
+	.header { 
+		width: 960px; 
+		margin-left: calc((100% - 960px) / 2);
+	}
+
+	.main-row {
+		margin-right: -24px;
+		margin-left: -24px;
+	}
+}
