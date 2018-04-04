@@ -22,9 +22,14 @@ header { border-bottom: 3px solid #ccc; }
 
 .main-content { flex: 1 0 auto; }
 
-.nav-item:hover { background-color: #17a2b8; }
+.nav-item:hover { 
+	background-color: #17a2b8; 
+	border-radius: 2px;
+}
 
-/* a:hover { color: #fff; } is not working, I think bootstrap is overwriting but I could not find how. */
+a { color: #777; }
+
+a:hover { color: #fff; }
 
 .card-body img {
 	opacity: 0.8;
