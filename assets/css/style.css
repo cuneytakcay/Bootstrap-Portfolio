@@ -27,9 +27,14 @@ header { border-bottom: 3px solid #ccc; }
 	border-radius: 2px;
 }
 
-a { color: #777; }
+#brand { 
+	color: #fff;
+	text-decoration: none; 
+}
 
-a:hover { color: #fff; }
+li>a { color: #777; }
+
+li>a:hover { color: #fff; }
 
 .card-body img {
 	opacity: 0.8;
