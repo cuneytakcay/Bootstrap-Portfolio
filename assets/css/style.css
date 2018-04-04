@@ -64,6 +64,11 @@ li>a:hover { color: #fff; }
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.form-control::-webkit-input-placeholder { color: #bbb }
+.form-control::-moz-placeholder { color: #bbb }
+.form-control:-ms-input-placeholder { color: #bbb }
+.form-control:-moz-placeholder { color: #bbb }
+
 /*=======================================================================
 ========================= MEDIA QUERIES =================================
 =========================================================================*/
