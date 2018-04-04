@@ -36,6 +36,10 @@ li>a { color: #777; }
 
 li>a:hover { color: #fff; }
 
+.card {
+	border-radius: 0;
+}
+
 .card-body img {
 	opacity: 0.8;
 	transform: scale(0.95);
