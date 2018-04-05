@@ -77,36 +77,23 @@
 		<!-- Form Submit Script -->
 		<script type="text/javascript">
 
-			const form = $('#contact-form')
-			const formMessages = $('#message-result')
-
-			$(form).submit(event => {
+			$('#contact-form').submit(event => {
 		    event.preventDefault()
-
-		    const formData = $(form).serialize()
 
 				$.ajax({
 				    type: 'POST',
-				    url: $(form).attr('action'),
-				    data: formData
+				    url: $('#contact-form').attr('action'),
+				    data: $('#contact-form').serialize(),
 				}).done(response => {
-				    $(formMessages).removeClass('error')
-				    $(formMessages).addClass('success')
-
-				    $(formMessages).text(response)
+						$('form').hide()
+				    $('#message-result').html(`<p class="text-success mt-5"><em>${response}</em></p>`)
 
 				    $('#name').val('')
 				    $('#email').val('')
 				    $('#message').val('')
 				}).fail(data => {
-				    $(formMessages).removeClass('success')
-				    $(formMessages).addClass('error')
-
-				    if (data.responseText !== '') {
-				        $(formMessages).html(`<h4>${data.responseText}</h4>`)
-				    } else {
-				        $(formMessages).html(`<h4>An error occured and your message could not be sent.</h4>`)
-				    }
+						$('form').hide()
+				    $('#message-result').html(`<p class="text-danger mt-5"><em>An error occured and your message could not be sent!</em></p>`)
 				})
 			})
 
