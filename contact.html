@@ -12,22 +12,22 @@
 	</head>
 
 	<body>
-		<header class="bg-white">
+		<header class="shadow bg-info">
 			<div class="header">
 				<div class="row m-0">
-					<div class="col-12 col-sm-5 bg-info p-0 name-logo">
-						<h1 class="text-center text-white p-3 mb-0"><a href="index.html" id="brand">Cuneyt Akcay</a></h1>
+					<div class="col-12 col-sm-5 p-0 name-logo">
+						<h1 class="pt-4 pb-4 mb-0"><a href="index.html" id="brand">Cuneyt Akcay</a></h1>
 					</div>
 					<div class="col-12 col-sm-7 p-0 main-links">
 						<ul class="nav navbar">
 							<li class="nav-item">
-								<a class="nav-link pt-0 pb-0" href="index.html">About</a>
+								<a class="nav-link pt-0 pb-0 mt-2" href="index.html">About</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link pt-0 pb-0" href="portfolio.html">Portfolio</a>
+								<a class="nav-link pt-0 pb-0 mt-2" href="portfolio.html">Portfolio</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link pt-0 pb-0" href="contact.html">Contact</a>
+								<a class="nav-link pt-0 pb-0 mt-2" href="contact.html">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -37,27 +37,27 @@
 
 		<div class="container-fluid pl-4 pr-4 pt-5 main-content">
 			<div class="row main-row">
-				<div class="col-md-8 bg-white p-4 mb-5 section">
-					<h2 class="text-info">Contact</h2><hr>
+				<div class="col-md-8 bg-white p-4 mb-5 section shadow">
+					<h2>Contact</h2><hr>
 					
 					<div id="message-result"></div>
-					<form id="contact-form" method="post" action="mailer.php">
+					<form id="contact-form" method="post" action="php/mailer.php">
 						<div class="form-group">
-							<input type="text" name="Name" class="form-control" id="name" placeholder="Enter your name" required>
+							<input type="text" name="Name" class="form-control" id="name" placeholder="Your name..." required>
 						</div>
 						<div class="form-group">
-							<input type="email" name="Email" class="form-control" id="email" placeholder="Enter your email" required>
+							<input type="email" name="Email" class="form-control" id="email" placeholder="Your email..." required>
 						</div>
 						<div class="form-group">
-							<textarea name="message" class="form-control" id="message" placeholder="Enter message" rows="6" required=""></textarea>	
+							<textarea name="message" class="form-control" id="message" placeholder="Your message..." rows="6" required=""></textarea>	
 						</div>
-						<button type="submit" class="btn btn-info">Submit</button>
+						<button type="submit" class="btn pl-5 pr-5 btn-info shadow">Submit</button>
 					</form>
 				</div>
 				
-				<div class="col-md-4 card border-0 bg-white pt-3 mb-5 h-100 aside">
+				<div class="col-md-4 card border-0 bg-white pt-3 mb-5 h-100 aside shadow">
 					<div class="card-header bg-white p-2 mb-2">
-						<h3 class="text-info">Connect with Me</h3>
+						<h3>Connect with Me</h3>
 					</div>
 					<div class="card-body p-2 pb-3">
 						<a href="https://github.com/cuneytakcay" target="_blank"><img src="assets/images/github.png" alt="Github icon" class="w-25"></a>
@@ -68,7 +68,7 @@
 			</div>
 		</div>
 
-		<div class="footer bg-dark h-100 p-3 text-center text-secondary" style="border-top: 4px solid #4aaaa5;">
+		<div class="footer bg-dark h-100 p-3 text-center text-secondary">
 				<p>&copy;Copyright 2017 Cuneyt Akcay</p>
 		</div>
 		

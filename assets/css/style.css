@@ -1,40 +1,49 @@
 body { 
+	background-color: #fafafa;
 	font-family: 'Oxygen', sans-serif;
 	line-height: 200%;
-	background-image: url("../images/concrete_seamless.png");  	
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column; 
 }
 
-h1 { font-size: 200%; }
+h1 {
+	font-size: 200%; 
+}
 
 h1, h2, h3, h4 { 
 	font-family: 'Rozha One', serif; 
 	letter-spacing: -1px; 
 }
 
+h2, h3 {
+	color: #777;
+}
+
 h4 { 
 	margin-bottom: 0;
 }
 
-header { border-bottom: 3px solid #ccc; }
+header {
+	border-bottom: 1px solid #fff;
+}
 
 .main-content { flex: 1 0 auto; }
 
-.nav-item:hover { 
-	background-color: #17a2b8; 
-	border-radius: 2px;
-}
-
 #brand { 
-	color: #fff;
+	color: #dfdfdf;
 	text-decoration: none; 
 }
 
-li>a { color: #777; }
+li>a { 
+	color: #fff;
+	font-size: 110%; 
+}
 
-li>a:hover { color: #fff; }
+li>a:hover { 
+	color: #fff;
+	text-shadow: 0 0 20px #fff; 
+}
 
 .card {
 	border-radius: 0;
@@ -128,3 +137,10 @@ li>a:hover { color: #fff; }
 		margin-left: -24px;
 	}
 }
+
+@media screen and (max-width: 992px) {
+	h1 {
+		text-align: center;
+	}
+}
+
